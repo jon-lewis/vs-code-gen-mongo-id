@@ -17,7 +17,7 @@ export function activate(context: vscode.ExtensionContext) {
 		// The code you place here will be executed every time your command is executed
 
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from MongoDB ID Generator!');
+		vscode.window.showInformationMessage(`Here's an ID: ${mongoObjectId()}`);
 	});
 
 	context.subscriptions.push(disposable);
@@ -25,3 +25,11 @@ export function activate(context: vscode.ExtensionContext) {
 
 // this method is called when your extension is deactivated
 export function deactivate() {}
+
+// Taken from Solenoid: https://gist.github.com/solenoid/1372386
+const mongoObjectId = function () {
+    var timestamp = (new Date().getTime() / 1000 | 0).toString(16);
+    return timestamp + 'xxxxxxxxxxxxxxxx'.replace(/[x]/g, function() {
+        return (Math.random() * 16 | 0).toString(16);
+    }).toLowerCase();
+};
