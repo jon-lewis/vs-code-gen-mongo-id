@@ -2,8 +2,10 @@
 	"name": "vs-code-gen-mongo-id",
 	"displayName": "MongoDB ID Generator",
 	"description": "Generates MongoDB IDs",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "JonathanLewis",
+	"repository": "https://github.com/jon-lewis/vs-code-gen-mongo-id",
+	"license": "wtfpl",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
