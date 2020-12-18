@@ -6,9 +6,9 @@ If you've ever found yourself searching google for a MongoDB ID generator, this 
 
 ## Features
 
-Simply type the command:
+Simply type the command 'Gen MongoDB ID: Replace Selected Text with MongoDB ObjectId'
 
-<!-- ![](./img/2020-12-18-13-55-58.png) -->
+<!-- ![](https://github.com/jon-lewis/vs-code-gen-mongo-id/blob/master/img/2020-12-18-13-55-58.png) -->
 
 which will place an ID at your cursor(s)
 
