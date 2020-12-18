@@ -10,16 +10,11 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:vs-code-gen-mongo-id.helloWorld",
         "onCommand:vs-code-gen-mongo-id.generateIdAtCursor"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
-			{
-				"command": "vs-code-gen-mongo-id.helloWorld",
-				"title": "Hello World"
-			},
 			{
 				"command": "vs-code-gen-mongo-id.generateIdAtCursor",
 				"title": "Gen MongoDB ID: Replace Selected Text with MongoDB ObjectId"
