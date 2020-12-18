@@ -22,7 +22,7 @@
 			},
 			{
 				"command": "vs-code-gen-mongo-id.generateIdAtCursor",
-				"title": "Generate MongoDB ObjectId at cursor"
+				"title": "Gen MongoDB ID: Replace Selected Text with MongoDB ObjectId"
 			}
 		]
 	},
