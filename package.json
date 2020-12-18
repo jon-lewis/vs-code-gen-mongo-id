@@ -2,7 +2,8 @@
 	"name": "vs-code-gen-mongo-id",
 	"displayName": "MongoDB ID Generator",
 	"description": "Generates MongoDB IDs",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"publisher": "JonathanLewis",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
@@ -22,6 +23,8 @@
 		]
 	},
 	"scripts": {
+		"publish:ext": "vsce publish",
+		"build:ext": "vsce package",
 		"vscode:prepublish": "webpack --mode production",
 		"webpack": "webpack --mode development",
 		"webpack-dev": "webpack --mode development --watch",
