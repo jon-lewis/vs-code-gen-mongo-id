@@ -23,8 +23,16 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(disposable);
 
 	disposable = vscode.commands.registerCommand('vs-code-gen-mongo-id.generateIdAtCursor', () => {
-		vscode.window.showInformationMessage(`pickles: ${mongoObjectId()}`);
+		// Get the active text editor
+		const editor = vscode.window.activeTextEditor;
 
+		if (editor) {
+			const selection = editor.selection;
+
+			editor.edit(editBuilder => {
+				editBuilder.replace(selection, mongoObjectId());
+			});
+		}
 	});
 
 	context.subscriptions.push(disposable);
